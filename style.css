@@ -1,16 +1,84 @@
-main{display: flex;}
-ul{list-style-image: url("Done_ring_round_fill.svg");}
-section{
-    display: flex;
-    flex-direction: column;
-    
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #fafaf9;
+}
+ul {
+  list-style-image: url("Done_ring_round_fill.svg");
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 5%;
+}
+ul li{
+    display: list-item;
+    vertical-align: top;
     
 }
-.clasificacion{
-    display: flex;
-    align-items: center;
+section {
+  /* border: 5px black solid;*/
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-family: "Sora";
+  font-size: 1.32rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
-article{
-    width: 40%;
-    background-color: blueviolet;
+p {
+  line-height: 1.8;
+}
+.clasificacion {
+  display: flex;
+  align-items: flex-end;
+  /* background-color: brown;*/
+  gap: 3%;
+}
+article {
+  width: 49%;
+  /*background-color: blueviolet;*/
+  padding: 3%;
+  margin: 0%;
+  font-size: 1rem;
+  border-radius: 5%;
+  padding-right: 5%;
+  padding-left: 7%;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.estrellitas {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+.contenedorDeTarjetas {
+  /* background-color: aqua;*/
+  width: 50%;
+  font-family: "Sora";
+  padding-right: 5%;
+  padding-left: 1%;
+}
+h1 {
+  font-size: 2.25rem;
+
+  padding: 0;
+}
+h2 {
+  font-size: 1.1rem;
+}
+.circle-star {
+  display: inline-flex; /* Hace que el contenedor se ajuste al contenido */
+  align-items: center; /* Alinea verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  width: 50px; /* Tamaño del círculo */
+  height: 50px; /* Altura igual al ancho para que sea un círculo */
+  background-color: gold; /* Fondo dorado */
+  border-radius: 50%; /* Hace que el fondo sea un círculo */
+  font-size: 1.5rem; /* Tamaño de la estrella */
+  color: white; /* Color de la estrella (opcional) */
+  text-align: center;
+}
+.samanta {
+  justify-self: flex-end;
+  margin-bottom: 10%;
 }
